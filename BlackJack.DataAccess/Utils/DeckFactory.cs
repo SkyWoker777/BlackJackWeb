@@ -20,10 +20,11 @@ namespace BlackJack.DataAccess.Utils
                 for (int j = 0; j < Enum.GetNames(typeof(CardRank)).Length; j++)
                 {
                     var card = new Card();
+                    card.Id = Guid.NewGuid();
                     card.Rank = (CardRank)j;
                     card.Suit = (Suit)i;
                     _cards.Add(card);
-                    
+
                     if (j < (int)CardRank.Ten)
                     {
                         _cards.Last().Dignity = minCardValue++;

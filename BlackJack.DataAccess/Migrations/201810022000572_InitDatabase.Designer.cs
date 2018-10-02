@@ -13,7 +13,7 @@ namespace BlackJack.DataAccess.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201809302158537_InitDatabase"; }
+            get { return "201810022000572_InitDatabase"; }
         }
         
         string IMigrationMetadata.Source

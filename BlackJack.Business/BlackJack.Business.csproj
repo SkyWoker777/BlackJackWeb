@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlackJack.DataAccess\BlackJack.DataAccess.csproj">
-      <Project>{3e447bf8-c5d6-4f02-86d9-41af1b338003}</Project>
+      <Project>{57067996-DAC5-464A-9926-AE9ADE477D10}</Project>
       <Name>BlackJack.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\BlackJack.ViewModels\BlackJack.ViewModels.csproj">

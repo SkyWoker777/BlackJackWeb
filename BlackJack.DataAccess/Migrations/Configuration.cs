@@ -1,7 +1,9 @@
 namespace BlackJack.DataAccess.Migrations
 {
+    using BlackJack.DataAccess.Entities;
     using BlackJack.DataAccess.Utils;
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -19,8 +21,9 @@ namespace BlackJack.DataAccess.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            var deck = DeckFactory.CreateDeck();
-            foreach(var card in deck) {
+            List<Card> deck = DeckFactory.CreateDeck();
+            foreach(var card in deck)
+            {
                 context.Cards.AddOrUpdate(card);
             }
             context.SaveChanges();
